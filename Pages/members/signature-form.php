@@ -1,0 +1,15 @@
+<h1 class="title">Modifier le pseudo</h1>
+<br clear="all" />
+<form method="post" action="<?php $config->rp() ?>">
+<?php if (isset($message)) {?>
+<fieldset><?php echo $message; ?></fieldset>
+<?php } ?>
+<fieldset>
+<input type="text" name="signature" value="<?php echo $member->signature() ?>" 
+placeholder="Nouvelle signature" />
+</fieldset>
+<fieldset>
+<input type="submit" name="editesignature" value="Modifier" />
+<input type="reset" value="Reprendre" />
+</fieldset>
+</form>

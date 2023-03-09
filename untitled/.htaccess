@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule  ([a-zA-Z0-9\-_]+)/add-a-webmaster  index.php?up=admi
+ErrorDocument 404 /Error/

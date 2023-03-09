@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteRule ([0-9]+)/([a-zA-Z0-9\-_]+) index.php?m=$1&alias=$2
+RewriteRule ([a-zA-Z0-9\-_]+)/update-signature index.php?alias=$1&mp=sign
+RewriteRule ([a-zA-Z0-9\-_]+)/update-password index.php?alias=$1&mp=pass
+RewriteRule ([a-zA-Z0-9\-_]+)/update-profile index.php?alias=$1&mp=comp
+RewriteRule ([a-zA-Z0-9\-_]+)/update-pseudo index.php?alias=$1&mp=pseu
+RewriteRule ([a-zA-Z0-9\-_]+)/update-avator index.php?alias=$1&mp=avat
+RewriteRule ([a-zA-Z0-9\-_]+)/update-email index.php?alias=$1&mp=emai
+RewriteRule moderator index.php?mp=modo
+ErrorDocument 404 /Error/

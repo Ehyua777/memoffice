@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<routes>
+<route url="/" module="Home" action="index" />
+<route url="/news" module="News" action="index" />
+<route url="/news/news-([0-9]+)\.html" module="News" action="show" vars="id"/>
+<route url="/news/commenter-([0-9]+)\.html" module="News" action="insertComment" vars="news" />
+</routes>

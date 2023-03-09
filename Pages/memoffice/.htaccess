@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteRule ([a-zA-Z0-9\-_]+)/manage-member-rights index.php?alias=$1&ap=righ
+RewriteRule ([a-zA-Z0-9\-_]+)/manage-blog-subjects index.php?alias=$1&ap=subj
+RewriteRule ([a-zA-Z0-9\-_]+)/manage-blog-subjects([a-zA-Z0-9\-]+)-([0-9]+)/ index.php?alias=$1&ap=subj&url=$2&edit=$3
+RewriteRule ([a-zA-Z0-9\-_]+)/manage-portfolio index.php?alias=$1&ap=phot
+RewriteRule ([a-zA-Z0-9\-_]+)/manage-news index.php?alias=$1&ap=news
+RewriteRule ([a-zA-Z0-9\-_]+)/manage-media index.php?alias=$1&ap=medi
+ErrorDocument 404 /Error/

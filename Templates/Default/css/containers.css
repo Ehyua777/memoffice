@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+.comment-avator > img
+{
+	width:65px;
+	height:65px;
+}
+.comment-avator, .meta
+{
+	display:table-cell;
+	padding-bottom:0px;
+	padding-top:0px;
+	padding-left:2px;
+	padding-right:2px;
+}
+section
+{
+	background:rgba(221,221,221,1);
+	padding:8px;
+	width:96%;
+	border-radius:10px;
+	margin:5px;
+}
+article, aside
+{
+	display:table-cell;
+}
+aside
+{
+	border:rgba(0,0,0,1) solid 1px;
+}
+article
+{
+	min-height:150px;
+}
+article > p
+{
+	width:100%;
+}
+article > img
+{
+	float:left;
+	margin:10px;
+}
+@media screen and (max-width: 500px)
+{
+	section
+	{
+		padding: 0 0 20px 0;
+		width:200px;
+		border:rgba(255,0,0,1) solid 1px;
+	}
+	article
+	{
+		min-height:150px;
+	}
+	article > p
+	{
+		width:100%;
+	}
+	article > img
+	{
+		width:100%;
+	}
+}

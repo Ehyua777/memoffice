@@ -1,0 +1,1 @@
+<img src="/Templates/Default/img/local/artdevivre.jpg" width="250" height="600" />
